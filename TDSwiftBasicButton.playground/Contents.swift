@@ -11,16 +11,16 @@
         backgroundView.backgroundColor = .lightGray
         
         // Label location
-        let viewWidth: CGFloat = 120.0
+        let viewWidth: CGFloat = 330.0
         let viewHeight: CGFloat = 50.0
         var viewX: CGFloat { get { return self.view.frame.width / 2 - viewWidth / 2 } }
         var viewY: CGFloat { get { return self.view.frame.height / 2 - viewHeight / 2 } }
         
         // Config sample view
         let basicButton = TDSwiftBasicButton(frame: CGRect(x: viewX, y: viewY, width: viewWidth, height: viewHeight))
-        basicButton.setTitle("Click Me", for: .normal)
+        basicButton.setTitle("Login", for: .normal)
         backgroundView.addSubview(basicButton)
-        
+                
         // Present background view
         self.view = backgroundView
     }
